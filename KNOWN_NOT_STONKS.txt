@@ -1,0 +1,12 @@
+#### FOR KNOWN NOT STONKS
+stonks_potential = []
+known_not_stonks = ['UPVOTE','SUPPORT','YOLO','ROPE','$ROPE','ACTION','AGAINST','ROBINHOOD','GAIN','LOSS','PORN%','CRAMER','ELON','CHAMATH','WSB','WSB.','I','STILL',"DIDN'T",'HEAR','NO','BELL','JORDAN','BELFORT','WIFE','BOYFRIEND','WISHTARD','CEO', 'INTERVIEW', 'POINTS','DD','GAMBLING','GAMBLE','MARGIN','UNUSUAL','OPTIONS','ACTIVITY', 'TENDIES','MONEY','COMING','EXTREMELY','REVOLUTION','APES','DD','GOOOOO','90K']
+
+
+# add in words that start with '$'
+for title in word_collect:
+    for word in title:
+        if word.isupper() and word not in known_not_stonks:
+            stonks_potential.append(word)
+
+print(stonks_potential)
